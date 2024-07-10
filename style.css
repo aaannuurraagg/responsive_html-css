@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* #box {
+  width: 300px;
+  height: 300px;
+  background-color: rosybrown;
+} */
+/* #innerbox { */
+/* fixed */
+/* width: 200px;
+  height: 200px; */
+/* with respect to parent */
+/* width: 50%;
+     height: 50%; */
+/* change upon the browser width */
+/* width: 30vw;
+  height: 30vh;
+  background-color: royalblue; */
+/* } */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* h1 {
+  font-size: 5vmin;
+}
+.parent {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.child1 {
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  border: 2px solid black;
+}
+.child2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(89, 247, 128);
+  border: 2px solid black;
+} */
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.nav {
+  height: 100px;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #dadada;
+  justify-content: space-between;
+  padding: 0 4vw;
+}
+.nav-part2 {
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+.nav h2 {
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+.nav h4 {
+  font-size: 1.1vw;
+}
+.nav button {
+  font-size: 1vw;
+  padding: 0.8vw 1.4vw;
+  background-color: #ff907f;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+.nav-part2 i {
+  font-size: 2vw;
+  display: none;
+}
+
+.content {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.left {
+  width: 55%;
+  /* background-color: red; */
+  padding: 5vw 4vw;
+}
+.left h1 {
+  font-size: 4vw;
+  line-height: 4.4vw;
+}
+.left h1 span {
+  color: #ff735c;
+}
+.left p {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #666;
+  width: 80%;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+.right {
+  height: 100%;
+  width: 50%;
+  background-color: aquamarine;
+  width: 45%;
+}
+.right img {
+  height: 100%;
+  width: 100%;
+}
+button {
+  font-size: 1.8vw;
+  padding: 1.2vw 2vw;
+  background-color: #ff735c;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 6vw;
+    height: 60px;
+  }
+  .nav {
+    font-size: 6vw;
+  }
+  .nav button {
+    display: none;
+  }
+  .nav h4 {
+    display: none;
+  }
+  .nav-part2 i {
+    font-size: 4vw;
+    display: block;
+  }
+  .content {
+    height: calc(100%-60px);
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    height: 45%;
+    padding: 4vw 5vw;
+  }
+  .right {
+    width: 100%;
+    height: 55%;
+  }
+  .left h1 {
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  .left p {
+    font-size: 3vw;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+  }
+  .content button {
+    padding: 3vw 6vw;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 3.5vw;
+  }
+}
